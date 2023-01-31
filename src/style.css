@@ -1,0 +1,256 @@
+/* CSS reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  margin: 20px 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page2 {
+    page-break-before: always;
+    margin-top: 32px;
+  }
+}
+
+article {
+  width: 21cm;
+  min-height: 29.7cm;
+  background: #fff;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  color: #666;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+strong {
+  font-weight: normal;
+  color: #00d09c;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconWrapper > img {
+  width: 1.33em;
+  height: 1.33em;
+  margin-right: 4px;
+}
+
+.previewLink {
+  font-weight: bold;
+  color: #00d09c;
+  margin-right: 8px;
+}
+
+.sourceCodeLink {
+  font-weight: bold;
+  color: #24292f;
+}
+
+/* 个人信息 */
+.bio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact1 {
+  margin-right: 16px;
+}
+
+.bio li {
+  list-style-type: none;
+}
+
+.bio .bioLink a {
+  font-weight: bold;
+  color: #00d09c;
+}
+
+.socialMedia {
+  display: flex;
+}
+
+.socialMedia1 {
+  margin-right: 4px;
+}
+
+.none {
+  font-weight: normal;
+  border: none;
+}
+
+/* 掌握技能 */
+.skills ul {
+  margin-left: 16px;
+}
+
+li {
+  list-style: disc;
+}
+
+/* 教育经历 */
+.experience {
+  display: flex;
+  justify-content: space-between;
+}
+
+.school {
+  font-weight: bold;
+}
+
+.time {
+  color: #666;
+}
+
+/* 项目经历 */
+
+.projects > .item {
+  margin-bottom: 24px;
+}
+
+.projects > .item > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects > .item > ul {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.projects > .item > li {
+  list-style-type: disc;
+  color: #666;
+}
+
+/* 开源项目 */
+
+.openSource > .item {
+  margin-bottom: 24px;
+}
+
+.openSource > .item > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.openSource > .item > ul {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.openSource > .item > li {
+  list-style-type: disc;
+  color: #666;
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+
+  article {
+    width: auto;
+    height: auto;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header .iconWrapper {
+    justify-content: flex-start;
+    margin-bottom: 8px;
+  }
+
+  .bio {
+    flex-direction: column-reverse;
+  }
+
+  .bio .name {
+    margin-top: 16px;
+  }
+
+  .bio .picture {
+    margin: 0 auto;
+  }
+
+  .bio .picture img {
+    border-radius: 50%;
+  }
+
+  .bio .name {
+    text-align: center;
+  }
+
+  .bio .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bio .contact .iconWrapper {
+    justify-content: flex-start;
+  }
+
+  .bio .socialMedia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bio .socialMedia .iconWrapper {
+    justify-content: flex-start;
+  }
+
+  .experience {
+    flex-direction: column;
+  }
+
+  .experience .iconWrapper {
+    justify-content: flex-start;
+    margin-bottom: 8px;
+  }
+}
