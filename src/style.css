@@ -49,6 +49,7 @@ ul {
 }
 
 li {
+  list-style-type: none;
   color: #666;
 }
 
@@ -101,10 +102,6 @@ strong {
   margin-right: 16px;
 }
 
-.bio li {
-  list-style-type: none;
-}
-
 .bio .bioLink a {
   font-weight: bold;
   color: #00d09c;
@@ -124,13 +121,6 @@ strong {
 }
 
 /* 掌握技能 */
-.skills ul {
-  margin-left: 16px;
-}
-
-li {
-  list-style: disc;
-}
 
 /* 教育经历 */
 .experience {
@@ -159,12 +149,6 @@ li {
 
 .projects > .item > ul {
   margin-top: 16px;
-  margin-left: 16px;
-}
-
-.projects > .item > li {
-  list-style-type: disc;
-  color: #666;
 }
 
 /* 开源项目 */
@@ -180,12 +164,6 @@ li {
 
 .openSource > .item > ul {
   margin-top: 16px;
-  margin-left: 16px;
-}
-
-.openSource > .item > li {
-  list-style-type: disc;
-  color: #666;
 }
 
 @media (max-width: 500px) {
